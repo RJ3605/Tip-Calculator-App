@@ -125,6 +125,11 @@ input[type="radio"] {
   color: hsl(186, 14%, 43%);
 }
 
+#people-div{
+  display: flex;
+  justify-content: space-between;
+}
+
 #bill-div {
   margin-bottom: 1rem;
 }
