@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Tip Calculator App</title>
+</head>
+
+<body>
+    <div id="splitter-div">
+        <div id="splitter"><img src="/images/logo.svg" alt="SPLITTER"></div>
+    </div>
+    <main>
+        <form>
+            <div class="inputs">
+                <div id="bill-div">
+                    <label for "bill">
+                        <h2>Bill</h2>
+                        <input type="text" inputmode="numeric" class="input" id="bill" placeholder="0">
+                    </label>
+                </div>
+                <div id="tip-div">
+                    <h2 id="select-tip">Select Tip %</h2>
+                    <div class="inputs-sub">
+                        <input type="radio" value="5" name="radio" id="5" class="radio input">
+                        <label class="tip-label" for="5">5%</label>
+                        <input type="radio" value="10" name="radio" id="10" class="radio input">
+                        <label class="tip-label" for="10">10%</label>
+                        <input type="radio" value="15" name="radio" id="15" class="radio input">
+                        <label class="tip-label" for="15">15%</label>
+                        <input type="radio" value="25" name="radio" id="25" class="radio input">
+                        <label class="tip-label" for="25">25%</label>
+                        <input type="radio" value="50" name="radio" id="50" class="radio input">
+                        <label class="tip-label" for="50">50%</label>
+                        <input type="text" inputmode="numeric" name="radio" class="input" id="custom" min="0"
+                            placeholder="Custom">
+                    </div>
+                </div>
+                <div id="people-div">
+                    <h2>Number of People</h2>
+                    <p id="error-message" hidden>Can't be zero</p>
+                </div>
+                <label for="people" id="people-label">
+                    <input type="text" inputmode="numeric" class="input" id="people" placeholder="0" min="1">
+                </label>
+            </div>
+            <div class="results">
+                <div class="sub-results" id="sub-results1">
+                    <div>
+                        <h3>Tip Amount</h3>
+                        <p>/ person</p>
+                    </div>
+                    <div id="tip-per-person">
+                        $0.00
+                    </div>
+                </div>
+                <div class="sub-results">
+                    <div>
+                        <h3>Total</h3>
+                        <p>/ person</p>
+                    </div>
+                    <div id="total-per-person">
+                        $0.00
+                    </div>
+                </div>
+                <input type="reset" id="reset" value="RESET">
+            </div>
+        </form>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>

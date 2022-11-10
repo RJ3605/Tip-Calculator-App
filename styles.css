@@ -1,0 +1,207 @@
+* {
+  font-family: "Space Mono", sans-serif;
+  font-weight: 700;
+}
+
+body {
+  background-color: hsl(185, 41%, 84%);
+}
+
+#splitter-div {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  background-color: white;
+  border-radius: 15px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: inherit;
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input {
+  box-sizing: border-box;
+  border: none;
+  background-color: hsl(189, 41%, 97%);
+  border-radius: 0.25rem;
+  background-position: 1rem center;
+}
+
+.inputs {
+  margin: 1rem;
+}
+
+.results {
+  color: white;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 1rem;
+}
+
+#tip-div {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.sub-results {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0rem 1rem;
+}
+
+#sub-results1 {
+  margin-top: 1rem;
+}
+
+h2,
+#error-message {
+  font-weight: 700;
+  font-size: 0.7rem;
+  margin: 0;
+}
+
+h3 {
+  font-size: 0.7rem;
+  font-weight: lighter;
+}
+
+p {
+  color: hsl(185, 41%, 84%);
+  font-size: 0.6rem;
+  margin: 0;
+  font-weight: 400;
+}
+
+#total-per-person,
+#tip-per-person {
+  color: hsl(172, 67%, 45%);
+  font-size: 24px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.tip-label {
+  color: white;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 0.2rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.inputs-sub {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+#bill-div,
+#people-div,
+#select-tip {
+  width: 100%;
+  color: hsl(186, 14%, 43%);
+}
+
+#bill-div {
+  margin-bottom: 1rem;
+}
+
+.tip-label,
+#custom {
+  width: 48%;
+  height: 2rem;
+}
+
+#custom {
+  text-align: right;
+  padding-right: 0.75rem;
+}
+
+#reset {
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(172, 67%, 45%);
+  border-radius: 0.2rem;
+  border: none;
+  margin: 1rem;
+  width: 100%;
+}
+
+#reset:active,
+.tip-label:hover {
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(185, 41%, 84%);
+}
+
+input[type="radio"]:checked + label {
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(172, 67%, 45%);
+}
+
+input[type="text"]:focus {
+  outline: solid hsl(172, 67%, 45%);
+}
+
+input[type="text"] {
+  color: hsl(183, 100%, 15%);
+}
+
+#bill,
+#people {
+  text-align: right;
+  width: 100%;
+  padding-right: 1rem;
+}
+
+#bill {
+  background-image: url("images/icon-dollar.svg");
+  background-repeat: no-repeat;
+  height: 2rem;
+}
+
+#people {
+  background-image: url("images/icon-person.svg");
+  background-repeat: no-repeat;
+  height: 2rem;
+}
+
+#people-label {
+  width: 100%;
+}
+
+.error {
+  outline: solid orangered;
+}
+
+#error-message {
+  color: orangered;
+}
+
+@media screen and (min-width: 320px) {
+  .tip-label,
+  #custom {
+    width: 31%;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  form {
+    display: flex;
+    justify-content: space-between;
+  }
+  .inputs {
+    width: 50%;
+  }
+  .results {
+    width: 50%;
+  }
+}
