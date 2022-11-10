@@ -42,6 +42,9 @@ inputs.forEach((input) => {
       document.querySelector(".selected")?.classList.remove("selected");
       input.classList.add("selected");
       calc();
+    } else if (input.name === "radio" && people.value > 1) {
+      document.querySelector(".selected")?.classList.remove("selected");
+      input.classList.add("selected");
     } else if (people.value >= 1) {
       calc();
     } else if (people.value <= 0 && input.id === "people") {
