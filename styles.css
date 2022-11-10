@@ -4,8 +4,11 @@
 }
 
 body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   background-color: hsl(185, 41%, 84%);
-  max-width: 750px
+  
 }
 
 #splitter-div {
@@ -13,9 +16,10 @@ body {
   justify-content: center;
 }
 
-main {
+form {
   background-color: white;
   border-radius: 15px;
+  max-width: 750px;
 }
 
 input::-webkit-outer-spin-button,
