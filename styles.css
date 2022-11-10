@@ -5,15 +5,22 @@
 
 body {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  background-color: hsl(185, 41%, 84%);
-  
+  background-color: hsl(185, 41%, 84%); 
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #splitter-div {
   display: flex;
   justify-content: center;
+  padding: 2rem 0rem
 }
 
 form {
