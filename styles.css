@@ -5,6 +5,7 @@
 
 body {
   background-color: hsl(185, 41%, 84%);
+  max-width: 750px
 }
 
 #splitter-div {
@@ -186,14 +187,14 @@ input[type="text"] {
   color: orangered;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 400px) {
   .tip-label,
   #custom {
     width: 31%;
   }
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 600px) {
   form {
     display: flex;
     justify-content: space-between;
