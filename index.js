@@ -47,9 +47,6 @@ inputs.forEach((input) => {
       input.classList.add("selected");
     } else if (people.value >= 1) {
       calc();
-    } else if (people.value <= 0 && input.id === "people") {
-      people.classList.add("error");
-      errorMessage.hidden = false;
     }
   });
 });
@@ -59,4 +56,12 @@ customTip.addEventListener("input", () => {
   radioTips.forEach((tip) => {
     tip.checked = false;
   });
+});
+
+// shows an error message is
+people.addEventListener("input", () => {
+  if (people.value <= 0) {
+    people.classList.add("error");
+    errorMessage.hidden = false;
+  }
 });
